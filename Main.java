@@ -1,6 +1,6 @@
-// YOUR NAME: 
-// COLLABORATORS: 
-// DATE: 
+// YOUR NAME: JORGE BARAJAS
+// COLLABORATORS: RYAN MAHDAVI
+// DATE: NOV 27 2024
 
 public class Main
 {
@@ -17,12 +17,13 @@ public class Main
         ASCII_CREDIT = "   ascii art by: jgs    ";
 
         static final String TITLE_USA = "UNITED STATES OF AMERICA",
-        TITLE_EAC = "EMPLOYMENT AUTHORIZATION CARD";
+            TITLE_EAC = "EMPLOYMENT AUTHORIZATION CARD";
+
         static final String LABEL_SURNAME = "Surname", LABEL_GIVEN_NAME = "Given Name", LABEL_USCIS_NUM = "USCIS#",
-        LABEL_CATEGORY = "Category", LABEL_CARD_NUM = "Card#", LABEL_BIRTH_COUNTRY = "Country of Birth",
-        LABEL_TERMS_CONDITIONS = "Terms and Conditions", LABEL_BIRTH_DATE = "Date of Birth",
-        LABEL_SEX = "Sex", LABEL_VALID_DATE = "Valid From:", LABEL_EXPIRE_DATE = "Card Expires:",
-        LABEL_REENTRY_DISCLAIMER = "NOT VALID FOR REENTRY TO U.S.";
+            LABEL_CATEGORY = "Category", LABEL_CARD_NUM = "Card#", LABEL_BIRTH_COUNTRY = "Country of Birth",
+            LABEL_TERMS_CONDITIONS = "Terms and Conditions", LABEL_BIRTH_DATE = "Date of Birth",
+            LABEL_SEX = "Sex", LABEL_VALID_DATE = "Valid From:", LABEL_EXPIRE_DATE = "Card Expires:",
+            LABEL_REENTRY_DISCLAIMER = "NOT VALID FOR REENTRY TO U.S.";
 
     public static void main(String[] args)
     {
@@ -107,7 +108,7 @@ public class Main
             authorizationCard += String.format("║%-25s%-15s%-30s║%n", "", LABEL_VALID_DATE, validDate);
             authorizationCard += String.format("║%-25s%-15s%-30s║%n", "", LABEL_EXPIRE_DATE, expireDate);
             authorizationCard += String.format("║%-25s%-45s║%n", ASCII_CREDIT, LABEL_REENTRY_DISCLAIMER);
-            authorizationCard += String.format("╚══════════════════════════════════════════════════════════════════════╝%n");
+            authorizationCard += String.format("╚══════════════════════════════════════════════════════════════════════╝");
   return authorizationCard;
 }
 public static String formatDate(int month, int day, int year){
